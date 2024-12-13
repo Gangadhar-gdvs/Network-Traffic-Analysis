@@ -1,0 +1,50 @@
+.charts-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .chart {
+    flex: 1 1 300px; /* Flexible but not less than 300px */
+    /* max-width: 600px; Maximum width */
+    max-height: 600px; /* Maximum height */
+    min-height: 300px; /* Minimum height */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow:auto; /* Hide overflow to prevent excessive growth */
+  }
+  
+  .chart canvas {
+    /* height: 100% !important; 
+    width: 100% !important;  */
+  }
+  
+  @media (max-width: 768px) {
+    .chart {
+        width: auto;
+        overflow: auto;
+      max-height: 500px; /* Adjust max-height for smaller screens */
+      min-height: 250px; /* Adjust min-height for smaller screens */
+    }
+    .charts-container{
+        width: 60%;
+        overflow: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart {
+        width: auto;
+        overflow: auto;
+      max-height: 400px; /* Further adjust max-height for very small screens */
+      min-height: 200px; /* Further adjust min-height for very small screens */
+    }
+  }
+  

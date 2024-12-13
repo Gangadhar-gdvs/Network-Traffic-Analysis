@@ -1,0 +1,90 @@
+.analysis-result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.analysis-result h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+.analysis-result h2,h3 {
+   text-align: center;
+}
+.summary, .detail {
+  margin-bottom: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.result-table th, .result-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.result-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.result-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.result-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .result-table th, .result-table td {
+    font-size: 0.8rem;
+  }
+  
+  .result-table th {
+    font-size: 0.9rem;
+  }
+
+  .analysis-result h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-table th, .result-table td {
+    font-size: 0.7rem;
+  }
+  
+  .result-table th {
+    font-size: 0.8rem;
+  }
+
+  .analysis-result h2 {
+    font-size: 1rem;
+  }
+}

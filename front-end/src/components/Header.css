@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to right, #4a90e2, #1457a6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    animation: spin 5s infinite linear;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: titleZoom 2s ease-in-out;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes titleZoom {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
