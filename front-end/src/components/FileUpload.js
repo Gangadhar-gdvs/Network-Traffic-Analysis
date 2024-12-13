@@ -35,7 +35,7 @@ const FileUpload = ({ onUpload }) => {
     formData.append('pcap', file);
 
     try {
-      const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('https://network-traffic-analysis-client.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
